@@ -16,7 +16,7 @@ $ docker build -t django-project .
 ### Dockerコンテナの実行
 作成したイメージを使ってDockerコンテナを作成、実行し、bashを起動します。
 ```command
-$ docker run --rm -it 8000:8000 -v $(pwd):/root/django-project django-project
+$ docker run --rm -it -p 8000:8000 -v $(pwd):/root/django-project django-project
 ```
 
 
