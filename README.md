@@ -19,5 +19,15 @@ $ docker build -t django-project .
 $ docker run --rm -it -p 8000:8000 -v $(pwd):/root/django-project django-project
 ```
 
+### サーバーの起動
+起動したコンテナのbashからDjangoサーバーを立ち上げます。
+```command
+(container) $ python3 manage.py runserver 0.0.0.0:8000
+```
+
+### 動作確認
+
+ブラウザから http://localhost:8000 にアクセスすることで確認できます。
+
 
 
