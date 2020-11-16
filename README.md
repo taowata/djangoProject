@@ -29,7 +29,7 @@ $ docker run --rm -it -p 8000:8000 -v $(pwd):/root/django-project django-project
 
 ブラウザから http://localhost:8000 にアクセスすることで確認できます。
 
-## GitFlow
+# GitFlow
 
 - master
   - プロダクトとしてリリースするためのブランチ。リリースしたらタグ付けする。
